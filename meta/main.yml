@@ -1,0 +1,9 @@
+galaxy_info:
+  author: OBS members
+  description: Ansible role to install https://github.com/kumina/openvpn_exporter
+  company: noris network AG
+  license: Apache-2.0
+  min_ansible_version: 2.9
+  galaxy_tags: [openvpn]
+
+dependencies: []
