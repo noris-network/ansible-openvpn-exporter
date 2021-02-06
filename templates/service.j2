@@ -1,0 +1,12 @@
+{{ ansible_managed | comment }}
+[Unit]
+Description=Kumina OpenVPN Exporter
+After=network-online.target
+
+[Service]
+User={{ openvpn_exporter_system_user }}
+Group={{ openvpn_exporter_system_group }}
+ExecStart=/usr/local/bin/openvpn-exporter-kumina -openvpn.status_paths "{{ openvpn_exporter_status_file }}" -web.listen-address ":{{ openvpn_exporter_listen_port }}"
+
+[Install]
+WantedBy=multi-user.target

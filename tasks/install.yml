@@ -1,0 +1,9 @@
+---
+
+- name: Copy binary openvpn-exporter-kumina
+  copy:
+    src: openvpn-exporter-kumina
+    dest: /usr/local/bin/
+    owner: root
+    group: root
+    mode: '0700'

@@ -1,0 +1,18 @@
+---
+
+- name: Copy systemd unit file
+  template:
+    src: service.j2
+    dest: /etc/systemd/system/openvpn-exporter-kumina.service
+    owner: root
+    group: root
+    mode: 0644
+  notify:
+    - restart openvpn-exporter-kumina
+
+- name: Start and enable
+  become: true
+  systemd:
+    name: openvpn-exporter-kumina
+    state: started
+    enabled: yes

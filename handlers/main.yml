@@ -1,0 +1,8 @@
+---
+
+- name: restart openvpn-exporter-kumina
+  systemd:
+    daemon_reload: True
+    name: openvpn-exporter-kumina
+    state: started
+    enabled: True
