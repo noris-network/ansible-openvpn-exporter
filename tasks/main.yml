@@ -1,0 +1,6 @@
+---
+- include: install.yml
+  become: True
+
+- include: configure.yml
+  become: True
