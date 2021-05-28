@@ -18,5 +18,5 @@ The default values of the following variables can be customized and are stored i
 openvpn_exporter_system_group: "root"
 openvpn_exporter_system_user: "root"
 openvpn_exporter_status_file: "/etc/openvpn/openvpn-status.log"
-openvpn_exporter_listen_port: "9276"
+openvpn_exporter_listen_port: "9176"
 ```

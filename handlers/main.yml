@@ -4,5 +4,5 @@
   systemd:
     daemon_reload: True
     name: openvpn-exporter-kumina
-    state: started
+    state: restarted
     enabled: True
