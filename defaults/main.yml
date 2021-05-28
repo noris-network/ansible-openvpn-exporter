@@ -2,5 +2,5 @@
 
 openvpn_exporter_system_group: "root"
 openvpn_exporter_system_user: "root"
-openvpn_exporter_status_file: "/etc/openvpn/openvpn-status.log"
-openvpn_exporter_listen_port: "9276"
+openvpn_exporter_status_file: "/var/log/openvpn-status.log"
+openvpn_exporter_listen_port: "9176"
